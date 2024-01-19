@@ -11,9 +11,16 @@ This is how you set this up in minutes.
 
 - create or update a Dockerfile like [this](./Dockerfile)
 
-- build image `docker build -t kali-x11 .`
-
-- run `x11docker -I --desktop kali-x11`
+- build & run image 
+    - e.g. the kali example
+        - build: `docker build -t kali-x11 -f ./kali-x11.Dockerfile .`
+        - run:   `x11docker -I --desktop kali-x11`
+    - or the arch linux example
+        - build: `docker build -t arch-x11 -f ./arch-x11.Dockerfile .`
+        - run:   `x11docker -I --desktop arch-x11`
+        
+- if you want create an alias and you are set to go 
+    - `alias arch-x11="x11docker -I --desktop arch-x11"`
 
 ## Other x11docker examples with prebuild images
 
