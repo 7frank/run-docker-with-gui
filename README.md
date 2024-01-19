@@ -18,9 +18,15 @@ This is how you set this up in minutes.
     - or the arch linux example
         - build: `docker build -t arch-x11 -f ./arch-x11.Dockerfile .`
         - run:   `x11docker -I --desktop arch-x11`
-        
+    - or nixos?
+        - build: `docker build -t nixos-x11 -f ./nixos-x11.Dockerfile .`
+        - run:   `x11docker -I --desktop nixos-x11`
+
+
 - if you want create an alias and you are set to go 
     - `alias arch-x11="x11docker -I --desktop arch-x11"`
+    - `alias kali-x11="x11docker -I --desktop kali-x11"`
+    - `alias nixos-x11="x11docker -I --desktop nixos-x11"`
 
 ## Other x11docker examples with prebuild images
 
