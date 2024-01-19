@@ -14,7 +14,10 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y \
     firefox-esr 
 
-
+# Install actual kali tools
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    kali-linux-default
+    
 
 # Set the default command to run
 CMD ["startxfce4"]
